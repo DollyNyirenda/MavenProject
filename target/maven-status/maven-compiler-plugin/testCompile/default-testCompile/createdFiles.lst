@@ -1,0 +1,5 @@
+com\lighthouse\MavenTest\HomePageTest.class
+com\lighthouse\MavenTest\LoginTest.class
+com\lighthouse\MavenTest\LogOutTest.class
+com\lighthouse\MavenTest\MotorsTest.class
+com\lighthouse\MavenTest\TestBase.class

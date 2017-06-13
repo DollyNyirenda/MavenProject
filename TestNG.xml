@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TradeMe Automation">
+
+<test name="verifyHomeTest">
+    <classes>
+        <class name="com.lighthouse.MavenTest.HomePageTest" ></class>  
+    </classes>
+</test>
+
+<test name="testSuccesfulLogin">
+    <classes>
+        <class name="com.lighthouse.MavenTest.LoginTest" ></class>  
+    </classes>
+</test>
+<test name="verifyMotorsTest">
+    <classes>
+        <class name="com.lighthouse.MavenTest.MotorsTest" ></class>  
+    </classes>
+</test>
+<test name="testSuccesfulLogOut">
+    <classes>
+        <class name="com.lighthouse.MavenTest.LogOutTest" ></class>  
+    </classes>
+</test>
+</suite>
