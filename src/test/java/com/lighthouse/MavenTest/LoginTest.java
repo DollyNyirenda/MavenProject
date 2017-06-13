@@ -29,7 +29,6 @@ public void loginPageTest(){
 				 .loginAs(username,password)
 				 .isLoginSuccessful();
  		   Assert.assertTrue(LoginTestResult, "Not Succesfully Logged In");
-//test comment
        		}
 	
 
