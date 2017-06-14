@@ -7,7 +7,7 @@
     </classes>
 </test>
 
-<test name="testSuccesfulLogin">
+<test name="testSuccessfullLogin">
     <classes>
         <class name="com.lighthouse.MavenTest.LoginTest" ></class>  
     </classes>
@@ -15,6 +15,16 @@
 <test name="verifyMotorsTest">
     <classes>
         <class name="com.lighthouse.MavenTest.MotorsTest" ></class>  
+    </classes>
+</test>
+<test name="verifyCarsTest">
+    <classes>
+        <class name="com.lighthouse.MavenTest.CarsTest" ></class>  
+    </classes>
+</test>
+<test name="verifyCarsList">
+    <classes>
+        <class name="com.lighthouse.MavenTest.TestCarList" ></class>  
     </classes>
 </test>
 <test name="testSuccesfulLogOut">

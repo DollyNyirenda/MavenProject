@@ -4,12 +4,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class LogOutTest extends TestBase {
-	@Test
-	public void testSuccesfulLogOut() throws Throwable{
+	@Test(dataProvider="dataProvider")
+	public void testSuccesfulLogOut(String username, String password) throws Throwable{
 		
 		 boolean LogoutTestResult = homePage.clickLogin()
-				 .loginAs("sepiso.nyirenda@gmail.com", "Nicole&2009").clickLogout("sepiso.nyirenda@gmail.com")
-				 .isLogoutSuccessful("sepiso");
+				 .loginAs(username,password)
+				 .clickLogout()
+				 .isLogoutSuccessful();
 		 Assert.assertFalse(LogoutTestResult, "Still Logged In");
 
 	}

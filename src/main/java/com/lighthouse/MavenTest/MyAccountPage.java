@@ -11,21 +11,20 @@ public class MyAccountPage extends PageBase
 	}
 
 	public Motors searchMotors(){
-		driver.findElement(By.id("searchString")).sendKeys("Motors");
-		driver.findElement(By.className("btn btn-trademe")).submit();
+		driver.findElement(By.xpath(config.motors)).click();
 		return new Motors(driver);
 }
 	
 	public boolean isLoginSuccessful() throws Throwable
 	{
 		//Thread.sleep(3000L);
-		boolean actual = driver.findElement(By.xpath(config.accountname)).getText().contains("Sepisodolly");
+		boolean actual = driver.findElement(By.xpath(config.logoutButton)).isDisplayed();
 	    return actual;
 	}
 	
-	public logOutPage  clickLogout(String username){
-		 driver.findElement(By.xpath(".//*[@id='container']/div[1]/div[1]/div[2]/div/p/a")).click();
-		return new logOutPage(driver);
+	public logOutPage  clickLogout(){
+		 driver.findElement(By.xpath(config.logoutButton)).click();
+		 return new logOutPage(driver);
 	}
 	
 	//public boolean isLoginSuccessful(String username)

@@ -10,9 +10,9 @@ public class logOutPage extends PageBase {
 		super(driver);
 	}
 
-	public boolean isLogoutSuccessful(String name)
+	public boolean isLogoutSuccessful()
 	{
-		return driver.findElement(By.xpath(config.accountname)).getText().contains(name);
+		return driver.findElement(By.xpath(config.logoutButton)).isDisplayed();
 	}
 
 }

@@ -17,4 +17,14 @@
         <class name="com.lighthouse.MavenTest.MotorsTest" ></class>  
     </classes>
 </test>
+<test name="Motors Test">
+    <classes>
+        <class name="com.lighthouse.MavenTest.CarsTest" ></class>  
+    </classes>
+</test>
+<test name="verifyCarsList">
+    <classes>
+        <class name="com.lighthouse.MavenTest.TestCarList" ></class>  
+    </classes>
+</test>
 </suite>
